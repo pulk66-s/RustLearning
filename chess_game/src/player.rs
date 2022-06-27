@@ -14,20 +14,14 @@ fn parse_buf(buf: String) -> (char, usize) {
 fn check_line(c: char) -> bool {
     return match c {
         x if ('A'..'I').contains(&x) => true,
-        _ => {
-            println!("false line");
-            false
-        }
+        _ => false,
     };
 }
 
 fn check_col(l: usize) -> bool {
     return match l {
         x if (0..9).contains(&x) => true,
-        _ => {
-            println!("false col");
-            false
-        }
+        _ => false,
     };
 }
 

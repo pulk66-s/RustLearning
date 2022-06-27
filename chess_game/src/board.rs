@@ -238,10 +238,10 @@ fn knight_moves(board: &Board, l: char, c: usize, player: usize) -> Vec<String> 
 }
 
 fn king_moves(board: &Board, l: char, c: usize, player: usize) -> Vec<String> {
-    let mut res: Vec<String> = vec!();
+    let mut res: Vec<String> = vec![];
     let f: fn(char) -> bool = match player {
         0 => char::is_lowercase,
-        _ => char::is_uppercase
+        _ => char::is_uppercase,
     };
     if c > 1 {
         if l < 'H' {
@@ -295,7 +295,7 @@ fn king_moves(board: &Board, l: char, c: usize, player: usize) -> Vec<String> {
 }
 
 fn queen_moves(board: &Board, l: char, c: usize, player: usize) -> Vec<String> {
-    let mut res: Vec<String> = vec!();
+    let mut res: Vec<String> = vec![];
     let mut bishop_moves: Vec<String> = bishop_moves(board, l, c, player);
     let mut rook_moves: Vec<String> = rook_moves(board, l, c, player);
     res.append(&mut bishop_moves);
