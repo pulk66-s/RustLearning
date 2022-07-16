@@ -1,0 +1,9 @@
+POST http://localhost:8000/user/create
+Content-Type: application/json
+
+{
+    "username": "Hello",
+    "password": "password"
+}
+###
+GET http://localhost:8000/user/ping

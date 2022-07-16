@@ -1,0 +1,9 @@
+{
+    "editor.rulers": [
+    
+    ],
+    "rust-analyzer.cargo.buildScripts.overrideCommand": null,
+    "rust-analyzer.diagnostics.disabled": [
+        "unresolved-proc-macro"
+    ]
+}
